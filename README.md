@@ -35,7 +35,7 @@ use \Anax\Proxy\DI\Page;
 /**
  * Show all movies.
  */
-Router::get("proxy", function () use ($app) {
+Router::get("movie", function () use ($app) {
     $data = [
         "title"  => "Movie database | oophp",
     ];
