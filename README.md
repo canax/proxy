@@ -52,7 +52,7 @@ Router::get("proxy", function () use ($app) {
 });
 ```
 
-Here is the same route implemented, with `$app` style programming.
+Here is the same route implemented, with `$app` style programming and dependency to the (globally) scoped variable `$app`.
 
 ```php
 <?php
