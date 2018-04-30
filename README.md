@@ -79,3 +79,21 @@ $app->router->get("movie", function () use ($app) {
     $app->page->render($data);
 });
 ```
+
+
+
+Related design patterns
+--------------------------
+
+Laravel calls their implementation Laravel Facade. This might indicate they relate to the design pattern [`Facade design pattern`](https://en.wikipedia.org/wiki/Facade_pattern).
+
+People have argued that the implementation is more of the design pattern [`Proxy design pattern`](https://en.wikipedia.org/wiki/Proxy_pattern).
+
+People have also argued that it is an implementation of the design pattern [`Singleton design pattern`](https://en.wikipedia.org/wiki/Singleton_pattern).
+
+
+
+```
+ .  
+..:  Copyright (c) 2018 Mikael Roos, mos@dbwebb.se
+```
