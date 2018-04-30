@@ -10,7 +10,7 @@ This is an intermediate test implementation, it works though, just for test and 
 Implementation
 --------------------------
 
-You start by initiating the proxy in the frntcontroller `index.php`.
+You start by initiating the proxy in the frontcontroller `index.php`.
 
 ```php
 Proxy::init($di);
