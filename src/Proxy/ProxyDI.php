@@ -2,12 +2,16 @@
 
 namespace Anax\Proxy;
 
-use \Anax\Proxy\ProxyException;
-use \Anax\DI\Exception\NotFoundException;
-use \Anax\DI\DIInterface;
+use Anax\DI\Exception\NotFoundException;
+use Psr\Container\ContainerInterface;
 
 /**
- * Baseclass for Proxy\\DI classes.
+ * Base class and template for Proxy\DI classes. Each $di service will be
+ * represented by an subclass of this class. This class is the base and the
+ * target base class is created with the autoloader of ProxyDIFactory. The
+ * target class holds the name of the $di service it connects to, below the
+ * namespace Anax\Proxy\DI\Service. As an example the $di->get("request")
+ * could be represented as Anax\Proxy\DI\Request.
  */
 class ProxyDI
 {
@@ -21,12 +25,13 @@ class ProxyDI
     /**
      * Inject $di and make it accessable for static proxy access.
      *
-     * @param DIInterface $di The service container holding framework
-     *                        services.
+     * @param Psr\Container\ContainerInterface $di The service container
+     *                                             holding framework
+     *                                             services.
      *
      * @return void.
      */
-    public static function injectDI(DIInterface $di)
+    public static function setDI(ContainerInterface $di) : void
     {
         self::$di = $di;
     }

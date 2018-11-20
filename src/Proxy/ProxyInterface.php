@@ -3,7 +3,7 @@
 namespace Anax\Proxy;
 
 /**
- * Interface for Proxy\\DI classes.
+ * Interface for base proxy classes, they all need to implement this interface.
  */
 interface ProxyInterface
 {

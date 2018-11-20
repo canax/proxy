@@ -3,6 +3,13 @@ Revision history
 
 
 
+v1.0.1 (2018-11-20)
+---------------------------------
+
+* Adapted to $di version 2.0 using Psr container interface.
+
+
+
 v1.0.* (2018-04-30)
 ---------------------------------
 
