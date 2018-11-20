@@ -1,6 +1,19 @@
 Anax Proxy
 ===========================
 
+[![Latest Stable Version](https://poser.pugx.org/anax/proxy/v/stable)](https://packagist.org/packages/anax/proxy)
+[![Join the chat at https://gitter.im/canax/proxy](https://badges.gitter.im/canax/proxy.svg)](https://gitter.im/canax/proxy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![Build Status](https://travis-ci.org/canax/proxy.svg?branch=master)](https://travis-ci.org/canax/proxy)
+[![CircleCI](https://circleci.com/gh/canax/proxy.svg?style=svg)](https://circleci.com/gh/canax/proxy)
+
+[![Build Status](https://scrutinizer-ci.com/g/canax/proxy/badges/build.png?b=master)](https://scrutinizer-ci.com/g/canax/proxy/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/canax/proxy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/canax/proxy/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/canax/proxy/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/canax/proxy/?branch=master)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/8705e9bc0a597e6dfb9a/maintainability)](https://codeclimate.com/github/canax/proxy/maintainability)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c3d60f33c0b947a3af127788e800b402)](https://www.codacy.com/app/mosbth/proxy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=canax/proxy&amp;utm_campaign=Badge_Grade)
+
 Anax module for static proxy to access framework resources, you can compare to the implementation of Laravel Facade.
 
 This is an intermediate test implementation, it works though, just for test and showing that it is a feasable implementation.
@@ -23,7 +36,6 @@ You start by defining the proxy class through `use \Anax\Proxy\DI\Db;`. You can 
 This is how it can be used with a route. 
 
 ```php
-<?php
 /**
  * App specific routes.
  */
