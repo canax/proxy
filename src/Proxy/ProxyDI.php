@@ -52,10 +52,6 @@ class ProxyDI
      */
     public static function __callStatic($name, $arguments)
     {
-        if (is_null(self::$di)) {
-            throw new ProxyException("Did you forget to inject \$di into the Proxy using Proxy::injectDi(\$di)?");
-        }
-
         try {
             $serviceName = static::getServiceName();
             $serviceObject = self::$di->get($serviceName);
