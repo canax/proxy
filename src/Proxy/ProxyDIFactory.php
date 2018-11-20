@@ -20,6 +20,8 @@ class ProxyDIFactory
      *                        services.
      *
      * @return void.
+     *
+     * @SuppressWarnings(PHPMD.StaticAccess)
      */
     public static function init(ContainerInterface $di) : void
     {
@@ -38,7 +40,7 @@ class ProxyDIFactory
      *
      * @return void
      *
-     * @SuppressWarnings(PHPMD.evalExpression)
+     * @SuppressWarnings(PHPMD.EvalExpression)
      */
     public static function autoloader($class) : void
     {

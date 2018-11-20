@@ -9,6 +9,8 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Check that failures are handled in order.
+ *
+ * @SuppressWarnings(PHPMD.StaticAccess)
  */
 class ProxyDIFactoryFailTest extends TestCase
 {

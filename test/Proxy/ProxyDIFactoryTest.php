@@ -8,6 +8,8 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Test that activating a proxy with a di service works.
+ *
+ * @SuppressWarnings(PHPMD.StaticAccess)
  */
 class ProxyDIFactoryTest extends TestCase
 {
