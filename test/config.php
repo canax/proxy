@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Sample configuration file for Anax webroot.
  */
@@ -15,6 +16,13 @@ define("ANAX_INSTALL_PATH", realpath(__DIR__ . "/.."));
  * Include autoloader.
  */
 require ANAX_INSTALL_PATH . "/vendor/autoload.php";
+
+
+
+/**
+ * Use $di as global identifier (used in views by viewhelpers).
+ */
+$di = null;
 
 
 

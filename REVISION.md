@@ -7,6 +7,8 @@ v1.0.1 (2018-11-20)
 ---------------------------------
 
 * Adapted to $di version 2.0 using Psr container interface.
+* Adding unit tests.
+* Adding CI-chain.
 
 
 
